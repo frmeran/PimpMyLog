@@ -36,7 +36,7 @@ function test( $type , $regex , $match , $types , $logs , $headers = true , $mul
 
 	$logs   = array_reverse( explode( "\n" , $logs ) );
 	$rank   = 0;
-	$size   = count( strval( count($logs) ) ) + 2;
+	$size   = strval( count($logs) )  + 2;
 	$blan   = str_pad( '' , $size );
 	$buffer = array();
 
